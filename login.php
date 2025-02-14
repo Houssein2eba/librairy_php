@@ -78,6 +78,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
                             </div>
                             <button type="submit" name="submit" class="btn btn-primary btn-block">Login</button>
                         </form>
+                        <div class="mt-3 text-center">
+                            <a  href="register.php">Creer un compte</a>
+                        </div>
                     </div>
                 </div>
             </div>
