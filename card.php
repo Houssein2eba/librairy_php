@@ -1,13 +1,13 @@
 <?php
 session_start();
-// if(!isset($_SESSION['id'])) {
-//     header("location: http://localhost/librairy/login.php");
-//     exit();
-// }
+if(!isset($_SESSION['id'])) {
+    header("location: http://localhost/librairy/login.php");
+    exit();
+}
 include __DIR__ . '/db.php';
 $idClient = $_SESSION['id'];
 $idProduit = $_GET['idProduit'];
-echo "$idClient.$idProduit";
+
 //insert into panier
 $stmt=$conn->prepare("INSERT INTO panier (ClientId,ProduitId) VALUES (?,?)");
 if (!$stmt) {

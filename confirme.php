@@ -34,8 +34,8 @@ if ($total == 0) {
 
 // إدراج الطلب في جدول commandes
 $insertCommande = $conn->prepare("
-    INSERT INTO commande (CommandeDate, Prix, Status, ClientId) 
-    VALUES (?, ?, 'En attente', ?)
+    INSERT INTO commande (CommandeDate, Prix, ClientId) 
+    VALUES (?, ?, ?)
 ");
 if (!$insertCommande) {
     die("Erreur SQL (Insertion commande): " . $conn->error);
