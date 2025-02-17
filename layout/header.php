@@ -22,6 +22,7 @@
             <?php if($_SESSION['category'] == 'Admin'){?>
         <a class="navbar-brand" href="http://localhost/librairy/admin_dashboard.php">Book Store</a>
         <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="http://localhost/librairy/addCategory.php">addBook</a></li>
         <li class="nav-item"><a class="nav-link" href="http://localhost/librairy/addBook.php">addBook</a></li>
             <li class="nav-item"><a class="nav-link" href="http://localhost/librairy/logout.php">logout</a></li>
         </ul>
