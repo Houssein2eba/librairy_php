@@ -27,7 +27,7 @@ if (!$stmt->execute()) {
 $result = $stmt->get_result();
 
 ?>
-
+<div class="d-flex flex-column min-vh-100">
 <div class="container mt-5">
     <h2 class="mb-4">Mes Commandes</h2>
 
@@ -66,5 +66,6 @@ $result = $stmt->get_result();
 <?php
 $stmt->close();
 $conn->close();
+
 include __DIR__ . '/layout/footer.php';
 ?>

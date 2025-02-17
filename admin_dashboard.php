@@ -1,7 +1,7 @@
 <?php
 session_start();
 include __DIR__ . '/db.php';
-include __DIR__ . '/header.php';
+include __DIR__ . '/layout/header.php';
 // التحقق مما إذا كان المستخدم مسجلاً
 if (!isset($_SESSION['id']) || $_SESSION['category'] !== 'Admin') {
     header("Location: http://localhost/librairy/login.php");

@@ -25,7 +25,7 @@ if (isset($_GET["message"])) { ?>
 <?php 
 
 } ?>
-
+<div class="d-flex flex-column min-vh-100">
 
     <!-- Main Content -->
     <div class="container mt-4">
@@ -59,4 +59,5 @@ if (isset($_GET["message"])) { ?>
 
 <?php 
 include __DIR__ . '/layout/footer.php';
+
 ?>
