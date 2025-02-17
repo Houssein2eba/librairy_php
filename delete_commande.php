@@ -43,6 +43,6 @@ try {
 
 // إغلاق الاتصال وإعادة التوجيه مع رسالة تأكيد
 $conn->close();
-header("Location: admin_dashboard.php?message=" . urlencode($message));
+header("Location: http://localhost/librairy/index.php?message=" . urlencode($message));
 exit();
 ?>

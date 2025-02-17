@@ -50,7 +50,7 @@ $result = $stmt->get_result();
                         <td><?= number_format($row['Prix'], 2) ?> MRU</td>
                         <td><?= htmlspecialchars($row['Status']) ?></td>
                         <td> 
-                        <a href="delete_commande.php?id=<?= $row['CommandeId'] ?>" class="btn btn-danger btn-sm" onclick="return confirm('Êtes-vous sûr de vouloir supprimer ?');">Supprimer</a>
+                        <a href="http://localhost/librairy/delete_commande.php?id=<?= $row['CommandeId'] ?>" class="btn btn-danger btn-sm" onclick="return confirm('Êtes-vous sûr de vouloir supprimer ?');">Supprimer</a>
                         </td>
                     </tr>
                 <?php endwhile; ?>
